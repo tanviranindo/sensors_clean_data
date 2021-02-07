@@ -32,5 +32,4 @@ for x in csv_reader:
 
 print("Max Height: " + str(maximumHeight) + ", Average Height: " + str("{:.2f}".format(sumHeight/count)))
 print("Max Pressure: " + str(maximumPressure) + ", Average Pressure: " + str("{:.1f}".format(sumPressure/count)))
-print("Max Temperature: " + str(maximumTemperature) + ", Average Temperature: "
-      + str("{:.2f}".format(sumTemperature/count)))
+print("Max Temperature: " + str(maximumTemperature) + ", Average Temperature: " + str("{:.2f}".format(sumTemperature/count)))
