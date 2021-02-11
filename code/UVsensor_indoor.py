@@ -23,11 +23,12 @@ for i in csv_reader:
     y.insert(count, UV_indoor)
     count = count + 1
 
-print(x)
-print(y)
+# print(x)
+# print(y)
 xpt = np.array(x)
 ypt = np.array(y)
 
 plt.plot(xpt, ypt)
+plt.title('UV sensor indoor')
 plt.show()
 print("Max sensor reading: " + str(maximumUV_indoor) + ", Average sensor reading : " + str("{:.2f}".format(sumUV_indoor / count)))

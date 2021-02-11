@@ -28,6 +28,7 @@ xpt = np.array(x)
 ypt = np.array(y)
 
 plt.plot(xpt, ypt)
+plt.title('mq135 with smoke')
 plt.show()
 print("Max AQ_withSmoke: " + str(maximumAQ_withSmoke) + " PPM, Average AQ_withSmoke: " + str(
     "{:.2f}".format(sumAQ_withSmoke / count)) + " PPM")

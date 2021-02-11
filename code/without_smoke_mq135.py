@@ -24,11 +24,12 @@ for i in csv_reader:
     y.insert(count, AQ_withoutSmoke)
     count = count + 1
 
-print(x)
-print(y)
+# print(x)
+# print(y)
 xpt = np.array(x)
 ypt = np.array(y)
 
 plt.plot(xpt, ypt)
+plt.title('mq135 without smoke')
 plt.show()
 print("Max AQ_withoutSmoke: " + str(maximumAQ_withoutSmoke) + " PPM, Average AQ_withoutSmoke: " + str("{:.2f}".format(sumAQ_withoutSmoke / count)) + " PPM")

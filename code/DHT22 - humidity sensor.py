@@ -27,5 +27,6 @@ for i in csv_reader:
 xpt = np.array(x)
 ypt = np.array(y)
 plt.plot(xpt, ypt)
+plt.title('DHT22 - humidity sensor')
 plt.show()
 print("Max Humidity: " + str(maximumHumidity) + ", Average Humidity: " + str("{:.2f}".format(sumHumidity / count)))

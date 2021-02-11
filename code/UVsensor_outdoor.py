@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 count = 0
-sumUV_indoor = 0.0
-maximumUV_indoor = None
+sumUV_outdoor = 0.0
+maximumUV_outdoor = None
 x = []
 y = []
 
@@ -13,21 +13,22 @@ csv_reader = csv.reader(file)
 next(csv_reader)
 
 for i in csv_reader:
-    UV_indoor = float(i[1].split('sensor reading = ')[1])
+    UV_outdoor = float(i[1].split('sensor reading = ')[1])
 
-    sumUV_indoor += UV_indoor
+    sumUV_outdoor += UV_outdoor
 
-    if maximumUV_indoor is None or UV_indoor > maximumUV_indoor:
-        maximumUV_indoor = UV_indoor
+    if maximumUV_outdoor is None or UV_outdoor > maximumUV_outdoor:
+        maximumUV_outdoor = UV_outdoor
 
     x.insert(count, count)
-    y.insert(count, UV_indoor)
+    y.insert(count, UV_outdoor)
     count = count + 1
 
 xpt = np.array(x)
 ypt = np.array(y)
 
 plt.plot(xpt, ypt)
+plt.title('UV sensor outdoor')
 plt.show()
-print("Max sensor reading: " + str(maximumUV_indoor) + ", Average sensor reading : " + str("{:.2f}".format(sumUV_indoor / count)))
+print("Max sensor reading: " + str(maximumUV_outdoor) + ", Average sensor reading : " + str("{:.2f}".format(sumUV_outdoor / count)))
 

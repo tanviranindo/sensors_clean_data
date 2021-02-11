@@ -27,5 +27,6 @@ for i in csv_reader:
 xpt = np.array(x)
 ypt = np.array(y)
 plt.plot(xpt, ypt)
+plt.title('mq7_with CO')
 plt.show()
 print("Max With_CO: " + str(maximumCO) + ", Average With_CO: " + str("{:.2f}".format(sumCO / count)))

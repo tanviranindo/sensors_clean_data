@@ -23,7 +23,7 @@ for x in csv_reader:
     sumH2 += H2
     sumAlcohol += Alcohol
     sumCO += CO
-    sumCO += CH4
+    sumCH4 += CH4
 
     if maximumH2 is None or H2 > maximumH2:
         maximumH2 = H2
@@ -39,4 +39,4 @@ for x in csv_reader:
 print("Max H2: " + str(maximumH2) + ", Average H2: " + str("{:.2f}".format(sumH2 / count)))
 print("Max Alcohol: " + str(maximumAlcohol) + ", Average Alcohol: " + str("{:.1f}".format(sumAlcohol / count)))
 print("Max CO: " + str(maximumCO) + ", Average CO: " + str("{:.2f}".format(sumCO / count)))
-print("Max CH4: " + str(maximumCH4) + ", Average CH4: " + str("{:.2f}".format(sumCO / count)))
+print("Max CH4: " + str(maximumCH4) + ", Average CH4: " + str("{:.2f}".format(sumCH4 / count)))

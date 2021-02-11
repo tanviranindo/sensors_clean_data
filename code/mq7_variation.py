@@ -27,5 +27,6 @@ for i in csv_reader:
 xpt = np.array(x)
 ypt = np.array(y)
 plt.plot(xpt, ypt)
+plt.title('mq7_variation')
 plt.show()
 print("Max variation: " + str(maximumVariation) + ", Average variation: " + str("{:.2f}".format(sumVariation / count)))

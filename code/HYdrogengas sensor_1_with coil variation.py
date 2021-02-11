@@ -27,5 +27,6 @@ for i in csv_reader:
 xpt = np.array(x)
 ypt = np.array(y)
 plt.plot(xpt, ypt)
+plt.title('Hydrogen gas sensor_1_with coil variation')
 plt.show()
 print("Max H2_Concentration: " + str(maximumH2) + ", Average H2_Concentration: " + str("{:.2f}".format(sumH2 / count)))

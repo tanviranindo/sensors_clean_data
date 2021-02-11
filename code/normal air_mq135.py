@@ -27,5 +27,6 @@ for i in csv_reader:
 xpt = np.array(x)
 ypt = np.array(y)
 plt.plot(xpt, ypt)
+plt.title('normal air_mq135')
 plt.show()
 print("Max : " + str(maximumNormal) + ", Average : " + str("{:.2f}".format(sumNormal / count)))
